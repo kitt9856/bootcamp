@@ -19,7 +19,7 @@ public class turtorialOne {
 
         i = 5;
         a = ++i;
-        System.out.println("using i++");
+        System.out.println("using ++1");
         System.out.println("a =" + a);
         System.out.println("i =" + i);
 
