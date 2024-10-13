@@ -6,6 +6,7 @@ public class DemoScanner {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.println("please input a number: ");
+    //.nextInt() 在scanner中讀取整數
     int number = input.nextInt();
    // System.out.println("number is " + number);
 

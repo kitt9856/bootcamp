@@ -149,7 +149,7 @@ public class Demoif {
       break;
     }
 
-    if (grade == 'A')
+    if (grade == 'A')  //same switch case
     System.out.println("grade is A");
     else if (grade == 'B')
     System.out.println("grade is B");
