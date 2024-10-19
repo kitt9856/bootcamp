@@ -1,4 +1,4 @@
-public class App {
+public class NestedLoop {
     public static void main(String[] args) throws Exception {
         int x = 3;
         //x *= 3;
@@ -71,6 +71,33 @@ public class App {
             System.out.println("how to use continue in for-loop:" + sum); // sum = 48 ->0+1+2+3+4+5+
 
         }
+
+    // ***** -> i = 0
+    // **** -> i = 1
+    // *** -> i = 2
+    // ** -> i = 3
+    // * -> i = 4
+    // use Nested Loop
+    String star = "*****";
+   // String staroutput = "";
+    System.out.println(star.length());
+    for (int n = 5; n > -1; n--) { //n大過-1就做野 即n=0->index 0也會show野
+        System.out.println(star.substring(0,n));
+
+    }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+        
 
 
 

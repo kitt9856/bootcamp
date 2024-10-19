@@ -8,6 +8,12 @@ public class Exercise4 {
         continue;
       System.out.print(i); //01234578910
     }
+
+    //for (int i = 0; i < 11; --i){
+    //  if (i == 6 )
+    //    continue;
+    //  System.out.print(i); //01234578910
+    //}
   }
   
 }

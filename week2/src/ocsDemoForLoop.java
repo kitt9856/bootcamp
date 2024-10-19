@@ -1,4 +1,4 @@
-public class DemoForLoop {
+public class ocsDemoForLoop {
   public static void main(String[] args) {
     for (int i = 0; i < 11; ++i) {
       if (i % 2 == 1){
@@ -67,14 +67,14 @@ public class DemoForLoop {
     System.out.println(tolal);
 
     String star = "";
-    for (int i < 5; i = 0; i--) {
+    for (int i = 0; i < 5; i--) {
       if (i == 4) {
         star = star.concat("*");
-        System.out.println(star);
 
         
         
       }
+      //System.out.println(star);
     }
 
 
@@ -82,3 +82,4 @@ public class DemoForLoop {
   }
 
 }
+

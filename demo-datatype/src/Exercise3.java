@@ -16,7 +16,7 @@ public class Exercise3 {
         Scanner input = new Scanner(System.in);
 
         int number_Of_DaysInMonth = 0;  //裝日數
-        boolean shouldPrint = true;
+        //boolean shouldPrint = true;  //gtp:set print result
         String MonthOfName = "Unknown";
 
         System.out.print("Input a month number: ");
@@ -87,11 +87,15 @@ public class Exercise3 {
 
             default: //任何case都不中 就default
                 System.out.println("month must be range of 1-12!");
-                shouldPrint = false;
+                //shouldPrint = false;  //change print result
 
         }
-        if (shouldPrint == true) {
+        //gpt: if default happen skip printout unknown result
+        /* if (shouldPrint == true) {
             System.out.print(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n");
-        }
+        } */
+       
+        System.out.print(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days\n");
+
     }
 }

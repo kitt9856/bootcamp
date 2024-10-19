@@ -53,6 +53,29 @@ public class DemoString { //class name = file anme
         float f2 = 10.3f;
         double d2 = 10.3d;
         int i2 = 10;
+
+        // toUpperCase()
+        System.out.println(x1.toUpperCase()); //HELLO
+        System.out.println("Hello".toLowerCase()); //hello
+        // 10 cannot to uppercase as it is int in java
+
+
+        // Chain Method
+        System.out.println("Peter".toLowerCase().length() > 4); //string can .length //output 5 . //>4 output true
+
+        // concat()
+        System.out.println("Vincent".concat("Lau"));//VincentLau
+        String fullName = "Vincent" + "Lau";
+        System.out.println(fullName);
+
+        String email = "vincentlau@gmail.com";
+        System.out.println(email.contains("gmail")); //true
+
+        
+
+
+
+
         
 
 
