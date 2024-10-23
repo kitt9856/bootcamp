@@ -85,6 +85,9 @@ public class NestedLoop {
         System.out.println(star.substring(0,n));
 
     }
+
+
+    
         
         
         
