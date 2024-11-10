@@ -86,6 +86,13 @@ public class NestedLoop {
 
     }
 
+    String star1 = "***";
+    for (int i = 0; i < 3; i++){
+        
+    }
+
+
+
 
     
         
