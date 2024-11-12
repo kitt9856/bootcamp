@@ -29,24 +29,29 @@ public class DemoBigDecimal {
 
       System.out.println(BigDecimal.valueOf(0.34)
       .multiply(BigDecimal.valueOf(0.34))
-      .setScale(2, RoundingMode.UP)
+      .setScale(3, RoundingMode.UP)
       .doubleValue()); 
     //if without set scale 0.1156 ->with setscale =0.116  roundingmode.down->0.115
 
-    BigDecimal.valueOf(9).divide(BigDecimal.valueOf(3)).doubleValue(); //3.0
+    System.out.println(
+    BigDecimal.valueOf(9).divide(BigDecimal.valueOf(3)).doubleValue()); //3.0
 
-    BigDecimal.valueOf(9).divide(BigDecimal.valueOf(2)).doubleValue(); //4.5
+    System.out.println(
+    BigDecimal.valueOf(9).divide(BigDecimal.valueOf(2)).doubleValue()); //4.5
 
-    BigDecimal.valueOf(10).divide(BigDecimal.valueOf(3)).doubleValue(); //error  not 3.333
+    //System.out.println(
+    //BigDecimal.valueOf(10).divide(BigDecimal.valueOf(3)).doubleValue()); //can run but error  not 3.333
 
     System.out.println(BigDecimal.valueOf(10)
-    .divide(BigDecimal.valueOf(3),4, RoundingMode.UP)
-    .setScale(1, RoundingMode.UP)
+    .divide(BigDecimal.valueOf(3),1, RoundingMode.UP)
+    //.setScale(1, RoundingMode.UP) 已在divide()中做Setscale
     .doubleValue());//3.3334 -> 3.4
 
     System.out.println(BigDecimal.valueOf(10)
-    .divide(BigDecimal.valueOf(3),1, RoundingMode.UP) //因已round up so no need again
+    .divide(BigDecimal.valueOf(3),4, RoundingMode.UP) //因已round up so no need again
     .doubleValue());//3.3334 
+
+    Boolean b = true; //true -> primitive value -> Boolean(autbox)
 
     Boolean y = 3== 0; // boolean(autobox)
     
@@ -64,16 +69,16 @@ public class DemoBigDecimal {
     String s5 = new String("hello");
     System.out.println(s1 == s5); //false
     String s6 = new String("hello").intern(); //new String("hello").intern() -> "hello" 較少用
-    System.out.println(s2 == s6);//false
+    System.out.println(s2 == s6);//true
 
     //if s1 =.toUpperCase 都會指 new object
 
     String s7 = "hello";
     String s8 = "hello";
-    System.out.println(System.identityHashCode(s7)); //146...
-    System.out.println(System.identityHashCode(s8));//146...
+    System.out.println(System.identityHashCode(s7)); //41359092
+    System.out.println(System.identityHashCode(s8));//41359092
     String s9 = new String("hello");
-    System.out.println(System.identityHashCode(s9)); // 148... 即已與s7 s8不同
+    System.out.println(System.identityHashCode(s9)); //149928006 即已與s7 s8不同
 
     //immutability 不可改
     //因java工作像派多個工人出去一齊工作

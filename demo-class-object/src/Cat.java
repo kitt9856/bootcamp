@@ -12,6 +12,15 @@ public class Cat {
   //c2.setName(peter) c,c2 name is same address
   //c2. new....(peter) c2 use new address now
 
+  //input -> output
+  //there code is from Person.java but can work as 只要輸入到就用到
+  public static String getFullName(Person person){ //is 公用的
+    //person object -> output
+    return person.getFullName();
+  }
+
+
+
 
   //Java: Instance = Oject
   //Instance Method
@@ -46,13 +55,20 @@ public class Cat {
     + "]";
    }
 
+   
    public static void main(String[] args) {
     String cat1Name = "John";
     int cat1Age = 10;
 
-    Cat cat1 = new Cat();
+    Cat cat1 = new Cat(); //empty constructor implicity exists 
+    // new Cat();  //can run 
+     System.out.println(cat1.info()); //Cat[name =null, age =0] 因如cat1未有料:
+    cat1.setName("John");
+    cat1.setAge(10);
+    System.out.println(cat1.info());//Cat[name =John, age =10]
 
-       System.out.println(cat1.info());
+
+
    }
 
   
