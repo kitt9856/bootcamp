@@ -67,6 +67,9 @@ public class Cat {
     cat1.setAge(10);
     System.out.println(cat1.info());//Cat[name =John, age =10]
 
+    //Dog dog = new Dog();
+    //System.out.println(dog.age); //error after add private //0 as same folder
+
 
 
    }

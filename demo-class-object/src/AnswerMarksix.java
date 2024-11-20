@@ -21,7 +21,7 @@ public class AnswerMarksix {
     int[] marksix = new int[7];
     //no duplicated
     int ballCount = 0;
-    int idx = 0;
+    int idx = 0;  //放array index = x[i]
     boolean duplicated = false;
     while (ballCount < 7) {
       duplicated = false;
