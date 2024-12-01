@@ -12,7 +12,7 @@ public class Projector extends Machine {
    }
    
    public Projector(double size,String color){
-    supper(color);
+    super(color);
     this.size = size;
    }
   

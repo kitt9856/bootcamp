@@ -1,0 +1,63 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Father",
+      "request": "launch",
+      "mainClass": "Father",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "BigTwoRules",
+      "request": "launch",
+      "mainClass": "bigtwo.BigTwoRules",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Card",
+      "request": "launch",
+      "mainClass": "bigtwo.Card",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Deck",
+      "request": "launch",
+      "mainClass": "bigtwo.Deck",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Direction",
+      "request": "launch",
+      "mainClass": "bigtwo.Direction",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "bigtwo.Test",
+      "projectName": "bootcamp_1ac5fe23"
+    }
+  ]
+}

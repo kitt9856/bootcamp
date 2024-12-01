@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 public class SuperDecimal extends BigDecimal { //bigdecimal 一定要放parm so here no empty constructor
 
   public SuperDecimal(double value){
-    supper(value);
+    super(value);
   }
 
   @Override
@@ -18,7 +18,7 @@ public class SuperDecimal extends BigDecimal { //bigdecimal 一定要放parm so 
   public int intValue(){
     //super.doubleValue() -> In the current object, "supper" keyword to find parent object
     //super.doubleValue() -> 3.3 -> ceil -> 4.0 -> (int)->4
-    return (int) Math.ceil(supper.doubleValue());
+    return (int) Math.ceil(super.doubleValue());
   }
 
   public static void main(String[] args) {

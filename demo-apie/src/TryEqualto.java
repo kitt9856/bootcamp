@@ -5,13 +5,12 @@ public class TryEqualto{
   
 
   public TryEqualto(int intValue){
-    this.equals(this);
   }
 
 
   public static void main(String[] args) {
     String x = "1";
-    boolean y = x.equals;
+    boolean y = x.equals("1");
     
   }
   

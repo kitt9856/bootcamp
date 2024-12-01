@@ -5,7 +5,7 @@ public abstract  class Machine  {
  abstract void stop();  
 
  public Machine(){
-  //super();
+  super();
   this.color = "BLACK"; //if use construnctor ,but it must color = black
  }
 
