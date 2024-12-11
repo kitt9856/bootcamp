@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LInkedList1",
+      "request": "launch",
+      "mainClass": "linkedlist.LInkedList1",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Shape",
+      "request": "launch",
+      "mainClass": "shape.Shape",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "StringLinkedList",
+      "request": "launch",
+      "mainClass": "StringLinkedList",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoLinkedList",
+      "request": "launch",
+      "mainClass": "DemoLinkedList",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Demo2DArray",
+      "request": "launch",
+      "mainClass": "Demo2DArray",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Direction",
+      "request": "launch",
+      "mainClass": "Direction",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Color",
+      "request": "launch",
+      "mainClass": "Color",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
       "name": "Father",
       "request": "launch",
       "mainClass": "Father",

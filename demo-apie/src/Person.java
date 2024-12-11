@@ -64,6 +64,7 @@ public class Person {
         System.out.println(p1); //sys out is calling toString()
 
         Object o1 = new Object(); //最頂部的object defaul已有Object
+        //左邊object 無法avoid extends
         System.out.println(o1.toString());
         //Object.toString() returns object reference
 
@@ -108,8 +109,14 @@ public class Person {
         if (x instanceof Projector) {
             Projector x2 = (Projector) x; //casting (down cast) //x的形態已是projector 但仍是Machine object
             System.out.println(x2.getColor()); //Orange
+
+
         }
 
+        Object father = new Father("AVC"); // hidden drive()
+        //father.drive();
+        Father realFather = (Father) father;
+        realFather.drive();
     }
 
 }
