@@ -1,5 +1,6 @@
-public class StringLinkedList {
-  private String value;
+public class StringLinkedList { //StringArrayList.java's old ver.
+
+  private String value; 
   private StringLinkedList next; //storing next object address
  // private StringLinkedList prev; //Original LinkedList //real linkedlist code
 

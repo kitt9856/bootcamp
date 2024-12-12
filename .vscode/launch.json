@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Ball",
+      "request": "launch",
+      "mainClass": "Ball",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoQueue",
+      "request": "launch",
+      "mainClass": "DemoQueue",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoSet",
+      "request": "launch",
+      "mainClass": "DemoSet",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
       "name": "LInkedList1",
       "request": "launch",
       "mainClass": "linkedlist.LInkedList1",

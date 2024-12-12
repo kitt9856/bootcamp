@@ -1,8 +1,8 @@
 public class StringArrayList {
-  private String[] strings;
+  private String[] strings; //linkedlist appear
 
   public StringArrayList(){
-    this.strings =new String[10]; //lenght = 0
+    this.strings =new String[0]; //lenght = 0
   }
 
   public void add(String string){
@@ -15,24 +15,30 @@ public class StringArrayList {
   }
 
   public void remove(String string){
-    boolean hasRemoveItem =false;
-    for
-
+    boolean hasRemoveItem =false;  //check是否真係有要刪的東西
+    for(int i = 0; i < this.strings.length;i++){
+      if(this.strings[i].equals(string)){
+        hasRemoveItem = true;
+        break;
+      }
+    }
     //Early return
-    if (!hasRemoveItem)
-    return;
+    if (!hasRemoveItem) //無就走
+       return;
 
     String[] newArray = new String[this.strings.length +1];
     int skipCount = 0;
     int idx = 0;
     for(int i = 0; i < this.strings.length; i++){
-      if (this.strings[i].equals(string) && skipCount == 0){
+      if (this.strings[i].equals(string) && skipCount == 0){ //found it first time
         skipCount++;
-       // continue; //continue should放最頂 去skip下面的野
+        continue; //continue should放最頂 去skip下面的野
+        
       }
       newArray[idx++] = this.strings[i]; //as不是數自已
     }
     this.strings =newArray; // ****** important
+    //因找到target就skip newArray會把下一round的放入
   }
 
   public int size(){
@@ -64,7 +70,7 @@ public class StringArrayList {
     //Integer, Boolean
 
     //e.g.
-    List<Customer> customers =new A
+   // List<Customer> customers =new A
 
     
   }

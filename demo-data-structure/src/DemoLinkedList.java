@@ -7,7 +7,7 @@ public class DemoLinkedList {
 
 
   public static void main(String[] args) {
-    List<String> strings = new LinkedList<>(); //
+    List<String> strings = new LinkedList<>(); // List without removeFirst, 
     //During compile-time, "strings" object can only call List.class method
     strings.add("abc");
     strings.add("abc");
@@ -31,6 +31,7 @@ public class DemoLinkedList {
     System.out.println(strings2);
     strings2.removeLast();
     System.out.println(strings2);
+    System.out.println(strings.contains("def"));
 
     //linkedlist for已知會不斷add or 波動
     //removefirst or last is 超快
