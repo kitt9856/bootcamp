@@ -25,44 +25,52 @@ public class Ball implements Comparable<Ball> {
     //Assignment: Blue -> Red -> white, if color is same, bigger size go first.
 
     @Override
-    public int compareTo(Ball ball) { //must Ball Object to call this method
-        //-1  or 1 
-        //this(-1) vs ball (1)  想this上前 return this -1 
-        if (this.color == ball.getColor()) //emen must use ==
-        {
+    public int compareTo(Ball ball){
+        if (this.color == ball.getColor() && this.size >= ball.getSize()){
+            return -1;
+        } else if((this.color == ball.getColor() && this.size < ball.getSize())){
             return 1;
         }
-        if (this.color == Color.BLUE) {
+
+        if (this.color == Color.BLUE){
             return -1;
         }
-        if (ball.getColor() == Color.BLUE) {
+        if (ball.getColor() == Color.BLUE){
             return 1;
         }
-        if (this.color == Color.RED && ball.getColor() == Color.WHITE) {
+        if (this.color == Color.RED && ball.getColor() == Color.WHITE){
             return -1;
         }
-        if (this.color == Color.RED && this.color == Color.WHITE) {
+        if (this.color == Color.RED && this.color == Color.WHITE){
             return 1;
         }
         return -1;
     }
 
     public String toString(){
-      return "Ball[" 
-      + "color=" + this.color.name() + "]";
+        return "Ball["
+        + "color= " + this.color.name()
+        + "size= " + this.size + "]";
     }
 
     public static void main(String[] args) {
       List<Ball> balls = new ArrayList<>();
       balls.add(new Ball(Color.WHITE,10.3));
       balls.add(new Ball(Color.RED,2));
-      balls.add(new Ball(Color.BLUE));
-      balls.add(new Ball(Color.RED));
+      balls.add(new Ball(Color.BLUE, 11));
+      balls.add(new Ball(Color.RED,2));
+      balls.add(new Ball(Color.BLUE, 12));
+
       Collections.sort(balls); //當中有行compareTo
       //要有特定條件 implement Comparable<>
-      System.out.println(balls); //[Ball[color=BLUE], Ball[color=RED], Ball[color=RED], Ball[color=WHITE]]
 
+      //before have ballsize
+      //System.out.println(balls); //[Ball[color=BLUE], Ball[color=RED], Ball[color=RED], Ball[color=WHITE]]
 
+      //after set ball size
+      System.out.println("there is: " + balls);
+      //there is: [Ball[color= BLUEsize= 12.0], Ball[color= BLUEsize= 11.0], 
+      //Ball[color= REDsize= 2.0], Ball[color= REDsize= 2.0], Ball[color= WHITEsize= 10.3]]
     }
 
 }

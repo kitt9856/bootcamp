@@ -66,7 +66,7 @@ public class StringLinkedList { //StringArrayList.java's old ver.
     strings.add("def");
     strings.add("ijk");
     System.out.println(strings);
-
+    
 
 
     //object reference -> strings -> object1 ()
