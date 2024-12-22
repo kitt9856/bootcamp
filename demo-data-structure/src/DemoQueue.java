@@ -16,7 +16,7 @@ public class DemoQueue {
     q1.add("Oscar");
     q1.add("lucas");
     String head = q1.poll(); //similar to removeFirst
-    System.out.println(head);
+    System.out.println("head =" +head);
     System.out.println(q1.size());//2
 
     q1.add("Steve");

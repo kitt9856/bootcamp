@@ -41,6 +41,8 @@ public class DemoArrayList {
         toBeDeleted.add("hello");
         
         System.out.println(strings2);
+        System.out.println(toBeDeleted);
+
         strings2.removeAll(toBeDeleted);
         System.out.println(strings2); //[def]
 

@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DemoUncheckedException",
+      "request": "launch",
+      "mainClass": "DemoUncheckedException",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoPriorityQueue",
+      "request": "launch",
+      "mainClass": "DemoPriorityQueue",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoArrayList",
+      "request": "launch",
+      "mainClass": "DemoArrayList",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
       "name": "Ball",
       "request": "launch",
       "mainClass": "Ball",

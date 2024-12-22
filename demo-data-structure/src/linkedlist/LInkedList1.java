@@ -59,7 +59,7 @@ public class LInkedList1 {
   }
 
   public String toString(){
-    Node tail = this.head;  //this.head is String
+    Node tail = this.head; 
     String str = "LinkedList1[";
     while (tail !=null){
       str += tail.value + ",";
