@@ -6,6 +6,48 @@
   "configurations": [
     {
       "type": "java",
+      "name": "DemoStream",
+      "request": "launch",
+      "mainClass": "DemoStream",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoOptional",
+      "request": "launch",
+      "mainClass": "DemoOptional",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Ball2",
+      "request": "launch",
+      "mainClass": "Ball2",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Car",
+      "request": "launch",
+      "mainClass": "Car",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "Customer",
+      "request": "launch",
+      "mainClass": "Customer",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
+      "name": "DemoLamda",
+      "request": "launch",
+      "mainClass": "DemoLamda",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
       "name": "DemoUncheckedException",
       "request": "launch",
       "mainClass": "DemoUncheckedException",

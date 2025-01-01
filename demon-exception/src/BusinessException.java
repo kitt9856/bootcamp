@@ -1,18 +1,19 @@
 public class BusinessException extends RuntimeException {
-  private Severity code; //1,2,3,4
+  private Severity severity; //1,2,3,4
 
-  public BusinessException(String message,Severity  code){
+  public BusinessException(String message,Severity  severity){
     super(message);
-    this.code=code;
+    this.severity=severity;
   }
 
-  public int getCode(){
-    return this.code;
+  public Severity getCode(){
+    return this.severity;
   }
 
 
   public BusinessException(String message){ //call parent's message
     super(message);
-    this.code=1;
+    //this.severity=1;
+    this.severity = Severity.LOW;
   }
 }
