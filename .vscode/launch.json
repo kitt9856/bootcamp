@@ -6,6 +6,34 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Person",
+      "request": "launch",
+      "mainClass": "com.lombook.Person",
+      "projectName": "demo-lombook"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.lombook.App",
+      "projectName": "demo-lombook"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.bootcamp2409.lombook.App",
+      "projectName": "lombook"
+    },
+    {
+      "type": "java",
+      "name": "Book",
+      "request": "launch",
+      "mainClass": "Book",
+      "projectName": "bootcamp_1ac5fe23"
+    },
+    {
+      "type": "java",
       "name": "DemoStream",
       "request": "launch",
       "mainClass": "DemoStream",
