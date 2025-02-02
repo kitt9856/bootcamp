@@ -2,11 +2,11 @@
 public interface Swimable {//contract合約 //不可call自己
   //implicitly public static final
   //1.All methods are without implementation(abstract method)
-  //2.no instance var
-  //3.no constructor
-  //4.can do 
+  //2.no instance var // e.g. public int x = 10; it is instance var.
+  //3.no constructor  //as no instance var to initialize
+  //4.can hold static var. / methods
 
-  int x = 10;
+  int x = 10; //local var
 
 
   void swim();

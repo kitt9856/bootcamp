@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../demo-springweb"
+		},
+		{
+			"name": "demo_restapi",
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"java.compile.nullAnalysis.mode": "automatic",
+		"java.configuration.updateBuildConfiguration": "interactive"
+	}
+}

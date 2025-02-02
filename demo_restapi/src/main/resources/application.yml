@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: demo-restapi
+
+server:
+  port: 8099
+
+api:
+ jph:
+  domaon: "jsonplaceholder.typicode.com/users"
+  user:
+    endpoint: "/users"

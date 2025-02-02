@@ -1,2 +1,4 @@
 com\lombook\App.class
 com\lombook\Person.class
+com\lombook\Calculator.class
+com\lombook\Person$PersonBuilder.class
