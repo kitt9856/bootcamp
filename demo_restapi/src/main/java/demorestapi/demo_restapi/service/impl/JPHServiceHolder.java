@@ -45,11 +45,10 @@ public class JPHServiceHolder implements JPHService{ //人地call你 你call人�
     .host(this.domain)
     .path(this.userEndpoint)
     .build()
-    .toUriString();
+    .toUriString();  //build url
     //System.out.println(url); //for debug
     //UserDto[] users = this.restTemplate.getForObject("https://".concat(domain).concat(user)users, UserDto[].class);
-    UserDto[] users = this.restTemplate.getForObject(url, UserDto[].class);
-
+    UserDto[] users = this.restTemplate.getForObject(url, UserDto[].class); //is agency
     return  Arrays.asList(users);
   }
 

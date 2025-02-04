@@ -2,10 +2,13 @@ package demorestapi.demo_restapi.model.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 
 //design for connecting with service provider (call other service)
 @Getter  //json only getter just ok
+@Builder //for testing, not must
 public class UserDto { //get from user/fronend
 
     private Long id; //Long obj can null
@@ -18,8 +21,8 @@ public class UserDto { //get from user/fronend
     private Company company;
 
     @Getter
+    @AllArgsConstructor
     public static class Company {
-
         private String name;
         private String catchPhrase;
         @JsonProperty(value = "bs") //bs --orginal income json value
@@ -27,6 +30,7 @@ public class UserDto { //get from user/fronend
     }
 
     @Getter
+    @AllArgsConstructor
     public static class Address {
 
         private String street;
@@ -36,8 +40,8 @@ public class UserDto { //get from user/fronend
         private GEO geo;
 
         @Getter
+        @AllArgsConstructor
         public static class GEO {
-
             private String lat;
             private String lng;
 

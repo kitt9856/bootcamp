@@ -1,4 +1,4 @@
-/* package demorestapi.demo_restapi.controller.impl;
+package demorestapi.demo_restapi.controller.impl;
 
 import java.util.Arrays;
 import java.util.List;
@@ -86,4 +86,3 @@ public class AnimalController implements AnimalOperation  {
 
   
 }
- */

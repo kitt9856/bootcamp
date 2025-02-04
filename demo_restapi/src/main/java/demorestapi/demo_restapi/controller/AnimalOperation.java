@@ -1,4 +1,4 @@
-/* package demorestapi.demo_restapi.controller;
+package demorestapi.demo_restapi.controller;
 
 import java.util.List;
 
@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import demorestapi.demo_restapi.controller.model.Animal;
 import demorestapi.demo_restapi.model.Animal;
 
 public interface AnimalOperation {
@@ -33,4 +32,3 @@ public interface AnimalOperation {
   public Animal patchAnimalName(@RequestParam Long animalId, @PathVariable String name); //X 要= {X}
 }
 //if will 重複 可用ParaVar
- */
