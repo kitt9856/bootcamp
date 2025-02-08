@@ -10,3 +10,19 @@ api:
   domaon: "jsonplaceholder.typicode.com/users"
   user:
     endpoint: "/users"
+
+database:
+  postgres: "db_2409p"
+
+spring.datasource:
+  # driverClassName: "org.hibernate.dialect.PostgreSQLDialect"
+  driverClassName: "org.postgresql.Driver"
+  url: "jdbc:postgresql://localhost:5432/${database.postgres}"
+  username: "postgres"
+  password: "admin1234"
+
+spring.jpa:
+  show-sql: true
+  hibernate.ddl-auto: none # update
+  #none for first time run ser to create table
+  #after would use update, if no syn to DB, jpa would drop table and creat new 
